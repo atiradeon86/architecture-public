@@ -1,0 +1,1 @@
+# Szoftverarchitektúrák képzés anyaga
