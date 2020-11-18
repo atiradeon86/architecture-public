@@ -45,3 +45,27 @@ config.db.logging = false
 ```
 
 Majd indítsd el az alkalmazást!
+
+## SQL nyelv
+
+* SQL konzol
+
+```shell
+docker exec -it locations-dbclient-mariadb mysql locations
+```
+
+* SQL utasítások
+
+```sql
+desc location;
+
+select * from location;
+
+insert into location(name, lat, lon) values ('Work2', 3, 3);
+
+update location set name = 'Work3' where id = 3;
+
+delete location where id = 3;
+
+select * from location left join tag on location.id = tag.locationId;
+```
