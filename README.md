@@ -93,3 +93,21 @@ db.location.insert({name: "Work", lat: 2, lon: 2})
 
 db.location.update({_id: "5f8e8e8237d3c021af6da9b6"}, {$set: {name: "Work2"}})
 ```
+
+## Többrétegű alkalmazások
+
+Adatbázis és szerver alkalmazás elindítása:
+
+```shell
+docker network create locations-net
+
+docker run -d -e MYSQL_DATABASE=locations -e MYSQL_USER=locations -e MYSQL_PASSWORD=locations -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3306:3306 --network locations-net --name locations-mariadb mariadb
+
+docker run -d -e SPRING_DATASOURCE_URL=jdbc:mariadb://locations-mariadb/locations -p 8080:8080 --network locations-net --name=my-locations training360/locations
+```
+
+Napló listázása:
+
+```shell
+docker logs -f my-locations
+```
