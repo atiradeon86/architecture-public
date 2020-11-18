@@ -111,3 +111,9 @@ Napló listázása:
 ```shell
 docker logs -f my-locations
 ```
+
+## Webes alkalmazás
+
+```shell
+docker run --rm --network locations-net --rm curlimages/curl -L -v http://my-locations:8080/server
+```
