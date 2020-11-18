@@ -69,3 +69,27 @@ delete from location where id = 3;
 
 select * from location left join tag on location.id = tag.locationId;
 ```
+
+## NoSQL adatbázisok
+
+MongoDB elindítása:
+
+```shell
+docker run -d -p27017:27017 --name locations-mongo mongo
+```
+
+Parancssoros kliens elindítása:
+
+```shell
+docker exec -it locations-mongo mongo locations
+```
+
+Parancsok:
+
+```javascript
+db.location.find()
+
+db.location.insert({name: "Work", lat: 2, lon: 2})
+
+db.location.update({_id: "5f8e8e8237d3c021af6da9b6"}, {$set: {name: "Work2"}})
+```
