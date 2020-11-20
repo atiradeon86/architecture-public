@@ -147,3 +147,25 @@ A `styles.css` fájl tartalma:
   color: red;
 }
  ```
+
+## Webes alkalmazás RIA felülettel
+
+Az `index.html` állományban:
+
+```html
+<input type="button" value="Click me!" />
+```
+
+A `myscript.js` állományban
+
+```javascript
+onload = () => document.querySelector('#welcome-button').addEventListener('click', e => {alert('Hello World!')});
+}
+```
+
+Az `index.html` állományban:
+
+```html
+<script src="myscript.js" type="text/javascript"></script>
+```
+
