@@ -117,3 +117,33 @@ docker logs -f my-locations
 ```shell
 docker run --rm --network locations-net --rm curlimages/curl -L -v http://my-locations:8080/server
 ```
+
+## Web formátumai: HTML és CSS
+
+Az `index.html` fájl tartalma:
+
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <body>
+        <h1>Example Page</h1>
+        <p>This is an example page. See <a href="http://training360.com">Training360</a>!</p>        
+    </body>
+</html>
+```
+
+A `styles.css` fájl tartalma:
+
+```html
+ <link rel="stylesheet" href="styles.css" />
+ ```
+
+ ```css
+ h1 {
+  color: red;
+}
+ ```
