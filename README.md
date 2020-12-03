@@ -159,8 +159,8 @@ Az `index.html` állományban:
 A `myscript.js` állományban
 
 ```javascript
-onload = () => document.querySelector('#welcome-button').addEventListener('click', e => {alert('Hello World!')});
-}
+onload = () => document.querySelector('#welcome-button')
+    .addEventListener('click', e => {alert('Hello World!')});
 ```
 
 Az `index.html` állományban:
