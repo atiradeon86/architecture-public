@@ -153,7 +153,7 @@ A `styles.css` fájl tartalma:
 Az `index.html` állományban:
 
 ```html
-<input type="button" value="Click me!" />
+<input id="welcome-button" type="button" value="Click me!" />
 ```
 
 A `myscript.js` állományban
