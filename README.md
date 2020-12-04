@@ -169,3 +169,6 @@ Az `index.html` állományban:
 <script src="myscript.js" type="text/javascript"></script>
 ```
 
+## Magas rendelkezésre állás és skálázhatóság
+
+Másold a saját gépedre a `locationslb` könyvtár tartalmát!
