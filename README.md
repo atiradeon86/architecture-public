@@ -91,7 +91,7 @@ db.location.find()
 
 db.location.insert({name: "Work", lat: 2, lon: 2})
 
-db.location.update({_id: "5f8e8e8237d3c021af6da9b6"}, {$set: {name: "Work2"}})
+db.location.update({_id: ObjectId("5f8e8e8237d3c021af6da9b6")}, {$set: {name: "Work2"}})
 ```
 
 ## Többrétegű alkalmazások
