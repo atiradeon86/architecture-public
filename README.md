@@ -115,7 +115,7 @@ docker logs -f my-locations
 ## Webes alkalmazás
 
 ```shell
-docker run --rm --network locations-net --rm curlimages/curl -L -v http://my-locations:8080/server
+docker run --rm --network locations-net curlimages/curl -L -v http://my-locations:8080/server
 ```
 
 ## Web formátumai: HTML és CSS
