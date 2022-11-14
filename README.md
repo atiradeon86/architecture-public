@@ -84,6 +84,11 @@ Parancssoros kliens elindítása:
 docker exec -it locations-mongo mongo locations
 ```
 
+MongoDB 6.0-tól a mongo shell helyett mongosh-t kell használni
+```
+docker exec -it locations-mongo mongosh locations
+```
+
 Parancsok:
 
 ```javascript
